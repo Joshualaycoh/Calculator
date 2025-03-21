@@ -1,0 +1,148 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: mediumseagreen;
+}
+
+.container{
+   padding: 10px;
+   height: 260px;
+   max-width: fit-content;
+   margin: 10px;
+   display: grid;
+   grid-template-columns: 85px 85px 85px 85px;
+   grid-template-rows: 36px 36px 36px 36px 36px 36px ;
+   gap: 5px;
+   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+   border: 1px solid black; 
+   border-radius: 5px;
+   border-color: #777777;
+   padding-top: 10px;
+   background-color: white;
+}
+
+.inputs{
+   grid-column: span 4;
+   grid-row: span 2;
+   border-radius: 5px;
+   border:.5px solid #777777;
+   font-size: 30px;
+   padding-left: 10px;
+   text-align: right;
+   padding-right: 10px;
+   
+}
+
+.title{
+    height: 200px;
+    max-width: 35%;
+    margin-right: 50px;
+    color: #222222;
+    font-size: 1.1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+button{
+   height: 36px;
+   width: 85px;
+   border: #999999 solid 0.2px;
+   cursor: pointer;
+   font-size: 1.5rem;
+   background-color: hsl(0, 0%, 93%);
+}
+
+button:hover{
+   background-color: hsl(0, 2%, 58%);
+}
+
+button:active{
+    background-color: hsl(3, 0%, 100%) 
+}
+
+#keys{
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 4.7px;
+}
+
+.ans{
+    background-color: hsl(33, 95%, 59%);
+    color: white;
+}
+
+.ans:hover{
+    background-color: hsl(33, 95%, 64%);
+}
+
+.ans:active{
+    background-color: hsl(33, 95%, 69%);
+}
+
+@media(max-width:1200px){
+  body{
+    background-color: orange;
+  }
+
+}
+
+@media(max-width:860px){
+    body{
+      background-color: skyblue;
+    }
+
+    .title{
+        margin-top: 25px;
+        font-size: 1rem;
+    }
+  
+  }
+
+  @media (min-width: 400px) and  (max-width:800px){
+    body{
+      background-color: #555555;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+    }
+    
+
+   .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 270px;
+    width: 360px;
+    max-width: 100%;
+    font-size: 1rem;
+    margin: 0%;
+    white-space: 20%;
+   }
+
+  
+  
+  }
+
+  @media(max-width:399px){
+    body{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+    }
+
+    .title{
+        max-width: 399px;
+        
+    }
+
+    h1{
+        display: block;
+        text-align: left;
+    }
+
+  }

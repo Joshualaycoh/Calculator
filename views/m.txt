@@ -1,0 +1,6 @@
+/*eval(display.value)*/
+
+    <div class="title">
+     <h1>CALCULATOR Using Javascript, CSS, Html <br><span style="color: #555555; font-size: 2rem;" >
+     <h4>Dev: Josh</h5></span></h5>
+    </div>
