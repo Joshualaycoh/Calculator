@@ -55,6 +55,21 @@ button{
    background-color: hsl(0, 0%, 93%);
 }
 
+.half-button{
+  width: 42px;
+}
+.zero-dot-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.AC {
+  font-size: 15px;
+  background-color: #ff4444;
+  color: #ffffff;
+  border: 1px solid grey;
+}
+
 button:hover{
    background-color: hsl(0, 2%, 58%);
 }
@@ -72,7 +87,10 @@ button:active{
 .ans{
     background-color: hsl(33, 95%, 59%);
     color: white;
+
 }
+
+
 
 .ans:hover{
     background-color: hsl(33, 95%, 64%);

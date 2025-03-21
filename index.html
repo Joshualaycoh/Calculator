@@ -10,7 +10,7 @@
     
 
     <div class="container"> 
-      <input class="inputs" id="display" name="equation"  readonly>
+      <input class="inputs" id="display" readonly>
       <div id="keys">
         <button onclick="appendToDisplay('+')" >+</button>
         <button onclick="appendToDisplay('7')" >7</button>
@@ -25,9 +25,13 @@
         <button onclick="appendToDisplay('2')" >2</button>
         <button onclick="appendToDisplay('3')" >3</button>
         <button onclick="appendToDisplay('/')" >/</button>
-        <button onclick="appendToDisplay('.')" >.</button>
+        <button onclick="appendToDisplay('0')" >0</button>
+        <div class="zero-dot-container">
+          <button class="half-button"  onclick="appendToDisplay('.')">.</button>
+          <button class="half-button AC" onclick="clearDisplay('AC')" >AC</button>
+        </div>
         <button class="ans" onclick="calculate('=')" >=</button>
-        <button onclick="clearDisplay('AC')" >AC</button>
+       
 
       </div>
     </div>
